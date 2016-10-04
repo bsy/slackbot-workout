@@ -1,0 +1,34 @@
+{
+  "name": "Slackbot Workout",
+  "description": "A fun hack that gets Slackbot to force your teammates to work out!",
+  "keywords": [
+    "slack",
+    "workout",
+    "excercise"
+  ],
+  "website": "https://www.rainforestqa.com/",
+  "repository": "https://github.com/rainforestapp/slackbot-workout",
+  "env": {
+    "SLACK_CHANNEL_ID": {
+      "description": "The slack channel id",
+    },
+    "SLACK_CHANNEL_NAME": {
+      "description": "Name of the slack channel you want the bot to work in."
+    },
+    "SLACK_TEAM_DOMAIN": {
+      "description": "Your slack team subdomain - https://<THIS>.slack.com/."
+    },
+    "SLACK_URL_TOKEN_STRING": {
+      "description": "Go to https://www.slack.com/apps/A0F81R8ET-slackbot, add a new configuration and set this to the token from the URL - i.e. https://something.slack.com/services/hooks/slackbot?token=<THIS>"
+    },
+    "SLACK_USER_TOKEN_STRING": {
+      "description": "Get a token from https://api.slack.com/docs/oauth-test-tokens."
+    }
+  },
+  "formation": {
+    "bot": {
+      "quantity": 1,
+      "size": "Hobby"
+    }
+  }
+}

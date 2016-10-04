@@ -1,9 +1,19 @@
 # slackbot-workout
-A fun hack that gets Slackbot to force your teammates to work out!
+
+A fun hack that gets Slackbot to force your teammates to work out! This is a fork from the [original](https://github.com/brandonshin/slackbot-workout) to add Heroku support, plus dial down the numbers (we're not as fit yet).
 
 <img src = "https://ctrlla-blog.s3.amazonaws.com/2015/Jun/Screen_Shot_2015_06_10_at_5_57_55_PM-1433984292189.png" width = 500>
 
-# Instructions
+## Running on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+1. Get a test token from https://api.slack.com/docs/oauth-test-tokens, put that in ``SLACK_USER_TOKEN_STRING``
+2. Set ``SLACK_TEAM_DOMAIN`` to your slack subdomain - i.e. this ``https://{SLACK_TEAM_DOMAIN}.slack.com/home``
+3. Go to https://www.slack.com/apps/A0F81R8ET-slackbot, add a new configuration and set ``SLACK_URL_TOKEN_STRING`` to the token from the URL.
+4. Pick a slack channel ``SLACK_CHANNEL_NAME`` and find or set the ID ``SLACK_CHANNEL_ID`` (you can fetch using ``$ python fetchChannelId.py channelname`` if you have your this installed locally...)
+
+## Running outside Heroku (aka, the hard way) 
 
 1. Clone the repo and navigate into the directory in your terminal.
 
