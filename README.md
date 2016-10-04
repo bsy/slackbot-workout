@@ -3,7 +3,6 @@ A fun hack that gets Slackbot to force your teammates to work out!
 
 <img src = "https://ctrlla-blog.s3.amazonaws.com/2015/Jun/Screen_Shot_2015_06_10_at_5_57_55_PM-1433984292189.png" width = 500>
 
-
 # Instructions
 
 1. Clone the repo and navigate into the directory in your terminal.
@@ -36,7 +35,7 @@ A fun hack that gets Slackbot to force your teammates to work out!
     
 7. Set up channel and customize configurations
 
-    Open `default.json` and set `teamDomain` (ex: ctrlla) `channelName` (ex: general) and `channelId` (ex: B22D35YMS). Save the file as `config.json` in the same directory. Set any other configurations as you like.
+    Open `default.json` and set `teamDomain` (ex: ctrlla) `channelName` (ex: general) and `channelId` (ex: B22D35YMS). Set any other configurations as you like.
 
     If you don't know the channel Id, fetch it using
 

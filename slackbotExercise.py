@@ -17,7 +17,6 @@ URL_TOKEN_STRING =  os.environ['SLACK_URL_TOKEN_STRING']
 
 HASH = "%23"
 
-
 # Configuration values to be set in setConfiguration
 class Bot:
     def __init__(self):
@@ -50,7 +49,7 @@ class Bot:
     '''
     def setConfiguration(self):
         # Read variables fromt the configuration file
-        with open('config.json') as f:
+        with open('default.json') as f:
             settings = json.load(f)
 
             self.team_domain = settings["teamDomain"]
