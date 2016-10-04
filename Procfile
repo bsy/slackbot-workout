@@ -1,1 +1,1 @@
-web: python slackbotExercise.py
+bot: python slackbotExercise.py
