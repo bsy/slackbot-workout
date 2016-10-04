@@ -11,18 +11,23 @@
   "env": {
     "SLACK_CHANNEL_ID": {
       "description": "The slack channel id",
+      "required": true
     },
     "SLACK_CHANNEL_NAME": {
-      "description": "Name of the slack channel you want the bot to work in."
+      "description": "Name of the slack channel you want the bot to work in.",
+      "required": true
     },
     "SLACK_TEAM_DOMAIN": {
-      "description": "Your slack team subdomain - https://<THIS>.slack.com/."
+      "description": "Your slack team subdomain - https://<THIS>.slack.com/.",
+      "required": true
     },
     "SLACK_URL_TOKEN_STRING": {
-      "description": "Go to https://www.slack.com/apps/A0F81R8ET-slackbot, add a new configuration and set this to the token from the URL - i.e. https://something.slack.com/services/hooks/slackbot?token=<THIS>"
+      "description": "Go to https://www.slack.com/apps/A0F81R8ET-slackbot, add a new configuration and set this to the token from the URL - i.e. https://something.slack.com/services/hooks/slackbot?token=<THIS>",
+      "required": true
     },
     "SLACK_USER_TOKEN_STRING": {
-      "description": "Get a token from https://api.slack.com/docs/oauth-test-tokens."
+      "description": "Get a token from https://api.slack.com/docs/oauth-test-tokens.",
+      "required": true
     }
   },
   "formation": {
