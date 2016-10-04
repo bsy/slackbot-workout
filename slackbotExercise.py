@@ -12,8 +12,8 @@ import datetime
 from User import User
 
 # Environment variables must be set with your tokens
-USER_TOKEN_STRING =  os.environ['SLACK_USER_TOKEN_STRING']
-URL_TOKEN_STRING =  os.environ['SLACK_URL_TOKEN_STRING']
+USER_TOKEN_STRING = os.environ['SLACK_USER_TOKEN_STRING']
+URL_TOKEN_STRING = os.environ['SLACK_URL_TOKEN_STRING']
 
 HASH = "%23"
 
@@ -52,14 +52,14 @@ class Bot:
         with open('default.json') as f:
             settings = json.load(f)
 
-            self.team_domain = settings["teamDomain"]
-            self.channel_name = settings["channelName"]
+            self.team_domain = os.environ['SLACK_TEAM_DOMAIN']
+            self.channel_name = os.environ['SLACK_CHANNEL_NAME']
+            self.channel_id = os.environ['SLACK_CHANNEL_ID']
             self.min_countdown = settings["callouts"]["timeBetween"]["minTime"]
             self.max_countdown = settings["callouts"]["timeBetween"]["maxTime"]
             self.num_people_per_callout = settings["callouts"]["numPeople"]
             self.sliding_window_size = settings["callouts"]["slidingWindowSize"]
             self.group_callout_chance = settings["callouts"]["groupCalloutChance"]
-            self.channel_id = settings["channelId"]
             self.exercises = settings["exercises"]
             self.office_hours_on = settings["officeHours"]["on"]
             self.office_hours_begin = settings["officeHours"]["begin"]

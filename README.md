@@ -33,13 +33,17 @@ A fun hack that gets Slackbot to force your teammates to work out!
     
     If you need help with this, try adapting the first 5 steps of the guide to [edit your .bash_profile](http://natelandau.com/my-mac-osx-bash_profile/)
     
-7. Set up channel and customize configurations
-
-    Open `default.json` and set `teamDomain` (ex: ctrlla) `channelName` (ex: general) and `channelId` (ex: B22D35YMS). Set any other configurations as you like.
+7. Set up slack domain, channel name and id
 
     If you don't know the channel Id, fetch it using
 
     `$ python fetchChannelId.py channelname`
+
+    Then export using:
+
+    `$ export SLACK_TEAM_DOMAIN=YOURTEAMDOMANIO`
+    `$ export SLACK_CHANNEL_NAME=YOURURLTOKEN`
+    `$ export SLACK_CHANNEL_ID=YOURURLTOKEN`
 
 8. If you haven't set up pip for python, go in your terminal and run.
 `$ sudo easy_install pip`

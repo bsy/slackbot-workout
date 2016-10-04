@@ -1,8 +1,4 @@
 {
-  "teamDomain": "yourDomainHere",
-  "channelName": "general",
-  "channelId": "channelIdHere",
-
   "officeHours": {
     "on": false,
     "begin": 9,
