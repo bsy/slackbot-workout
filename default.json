@@ -1,6 +1,6 @@
 {
   "officeHours": {
-    "on": false,
+    "on": true,
     "begin": 9,
     "end": 17
    },
@@ -9,8 +9,8 @@
 
   "callouts": {
     "timeBetween": {
-      "minTime": 17,
-      "maxTime": 23,
+      "minTime": 30,
+      "maxTime": 45,
       "units": "minutes"
     },
     "numPeople": 3,
@@ -23,34 +23,41 @@
       "id": 0,
       "name": "pushups",
       "minReps": 15,
-      "maxReps": 20,
+      "maxReps": 40,
       "units": "rep"
     },
     {
       "id": 1,
       "name": "planks",
       "minReps": 40,
-      "maxReps": 60,
+      "maxReps": 90,
       "units": "second"
     },
     {
       "id": 2,
       "name": "wall sit",
       "minReps": 40,
-      "maxReps": 50,
+      "maxReps": 60,
       "units": "second"
     },
     {
       "id": 3,
       "name": "chair dips",
       "minReps": 15,
-      "maxReps": 30,
+      "maxReps": 45,
       "units": "rep"
     },
     {
       "id": 4,
       "name": "calf raises",
-      "minReps": 20,
+      "minReps": 30,
+      "maxReps": 75,
+      "units": "rep"
+    },
+    {
+      "id": 5,
+      "name": "squates",
+      "minReps": 15,
       "maxReps": 30,
       "units": "rep"
     }
