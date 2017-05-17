@@ -1,8 +1,12 @@
 {
+  "teamDomain": "squaretwoinc",
+  "channelName": "workout",
+  "channelId": "C5520EFL7",
+
   "officeHours": {
     "on": true,
-    "begin": 9,
-    "end": 17
+    "begin": 16,
+    "end": 23
    },
 
   "debug": false,
